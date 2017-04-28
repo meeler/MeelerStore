@@ -1,0 +1,27 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="manager_web:war exploded">
+    <output-path>$PROJECT_DIR$/manager_web/target/manager_web</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="manager_web" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="manager_service-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="manager_service" />
+          </element>
+          <element id="archive" name="manager_mapper-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="manager_mapper" />
+          </element>
+          <element id="archive" name="manager_pojo-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="manager_pojo" />
+          </element>
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/manager_web/target/manager_web/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="manager_web/web/Web" />
+    </root>
+  </artifact>
+</component>
